@@ -1,0 +1,66 @@
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans';
+    
+
+
+}
+
+
+.input
+{
+    width: 70%;
+    max-width: 350px;
+    position: relative;
+
+}
+
+#mail
+{
+    display: block;
+    width: 80%;
+
+    border-radius: 25px;
+    border: 1px solid #555;
+    background: transparent;
+    outline: none;
+    font-size: 17px;
+    padding: 5px 3px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 10;
+    border-right: none;
+
+
+}
+
+#emlabel
+{
+display: block;
+position: absolute;
+bottom: 5px;
+padding-bottom: 1px;
+left: 2px;
+padding-left: 3px;
+color: #777;
+font-size: 15px;
+transition: bottom 0.3s;
+
+}
+
+#errormsg
+{
+    position: relative;
+    top: 100%;
+    left: 2px;
+    font-size: 16px;
+    font-weight: 400;
+    color:hsl(0, 93%, 68%);
+    transition: 0.5s;
+
+}
+

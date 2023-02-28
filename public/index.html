@@ -1,0 +1,353 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin Sans">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Base Apparel coming soon page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    
+    <style>
+      
+      .attribution {
+        font-size: 11px;
+        
+        text-align: center;
+      }
+      
+      .attribution a 
+      {
+        color: hsl(228, 45%, 44%);
+      }
+
+
+
+
+
+      .body
+      {
+        font-family: 'Josefin Sans';
+        font-size: 16px;
+   
+      }
+
+      #boom
+      {
+        color: hsl(0, 36%, 70%);
+        font-family: 'Josefin  Sans';
+
+      }
+
+      .Coming
+      {
+        
+        color: hsl(0, 36%, 70%);
+        font-family: 'Josefin  Sans';
+        font-size: 16px;
+
+      }
+
+      
+      .column1
+      {
+       
+        float: right;
+        text-align:left;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 16px;
+
+
+      }
+      
+     /*  .div1
+      {
+        background-image: url('../base-apparel-coming-soon-master/images/bg-pattern-desktop.svg');
+        float: right;
+        width: 100%;
+        height: auto;
+        
+
+
+      } */
+
+     /*  #div2
+      {
+        background-image: image(hero-desktop);
+        width: 50%;
+        height: auto;
+        float: left;
+
+      } */
+
+
+      #container
+      {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+
+      }
+
+      #first 
+      {
+        background-image: url(./images/bg-pattern-desktop.svg);
+        align-items: center;
+        margin: 10px;
+        width: 100%;
+        
+      }
+
+      #second 
+      {
+        /* background-color: pink; */
+        background-image: image(hero-desktop);
+        align-items: center;
+        margin: 10px;
+        width: 100%;
+      }
+
+
+
+
+
+
+
+/* /* 
+       input[type=email]
+{
+            width: 40%;
+            padding: 12px 20px ;
+            margin: 8px;
+            border: 1px solid black;
+            border-radius: 4px;
+            background-color: white;
+            ;
+} */
+
+
+
+/* input[type="email"]
+{
+   border: 2px solid black;
+   width: 480px;
+   height: 50px;
+   padding: 0 16px;
+   
+} */
+
+button
+{
+    position: absolute;
+    border-radius: 25px; 
+    top:0;
+    bottom: 0;
+    right: 0;
+    /* background-image:url(images/icon-arrow.svg); */
+    background-color: hsl(0, 36%, 70%);
+    width: 20%;
+    border: none;
+
+
+} 
+
+/*          input[type=submit]
+        {
+            background-image: url(images/icon-arrow.svg);
+            border: none;
+            color: pink;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 5px 3px;
+            cursor: pointer;
+        } */ 
+
+      
+
+
+
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <script type="text/javascript" src="../basewebsite/script.js"></script>
+
+    
+
+
+    <div id="container">
+
+      
+
+      <!--First div-->
+
+    <div id="first" class="left" >
+      
+          <table style="width: 100%; padding-left: 10vh; padding-top: 10vh;" align="center" >
+
+      <tr>  
+        <td >
+          <!-- Logo of the website-->
+  
+           <img src="../basewebsite/images/logo.svg"> 
+  
+        </td>
+      </tr>
+
+
+
+      <tr >  
+      <td class="background" style="padding-left: 10vh; padding-top: 30vh; margin-left: 20px;"  >
+
+
+          <h1 id="boom"> </h1>
+          <h1 id="boo"> </h1>
+          <h1 id="bo"> </h1>
+            <br>
+  
+          <p id="Coming" style="color: hsl(0, 36%, 70%); ">
+            <br>
+            <br>
+            <!-- <div id="coming"></div>
+            Hello fellow shoppers! We're currently building our new<br>
+            fashion store. Add your email below to stay up-to-date with<br> announcements
+            and our launch deals. Email Address</p> -->
+
+
+            
+
+
+          <label>
+            <form>
+              <!-- <input type="email" id="email" name="email" placeholder="Email Address">
+              <button id="button" type="submit" value="Submit" onclick="" >
+  
+                <input type="image" src="./images/icon-arrow.svg"/>
+              </button> -->
+
+              <br>
+              <br>
+              
+            
+
+<!--email form-->
+            <div class="input">
+
+              <label id="emlabel">Email</label>
+              <input type="email" id="mail" spellcheck="false" placeholder="" onclick="validateEmail()"/>
+              <button id="button" type="submit" value="Submit" onclick="validateEmail()" >
+  
+                <input type="image" src="./images/icon-arrow.svg" />
+              </button>
+              
+  
+              <label id="errormsg"></label>
+              
+
+
+            </div>
+
+              
+            </form>
+          </label>
+
+          <script>
+
+            // <!--validate email-->
+
+            var emailField = document.getElementById("mail");
+            var emailLabel = document.getElementById("emlabel");
+            var emailError = document.getElementById("errormsg");
+
+            function validateEmail()
+            {
+              emailLabel.style.bottom = "45px";
+              
+              if(!emailField.value.match(/^[A-Za-z\._\-0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/))
+            {
+              emailError.innerHTML = "Please provide a valid email";
+              emailField.style.borderColor= "hsl(0, 93%, 68%)" ;
+              emailError.style.top = "120%";
+              return false;
+
+            }
+
+            emailError.innerHTML = "";
+            emailField.style.borderColor="green";
+            emailError.style.top="100%";
+            return true;
+           }
+
+            
+      
+      
+          </script>
+            
+  
+        </td>
+
+      
+      </tr>
+
+      
+    </table>
+  
+  </div>
+
+
+   <!--Second div-->
+
+   <div id="second" class="right"> 
+
+    <img src="../basewebsite/images/hero-desktop.jpg"
+        alt="hero-desktop"
+        style="float: right;"
+        width="90%">
+      
+  </div>
+    
+    
+    </div>
+
+
+        
+        
+    
+
+   
+
+   
+    
+    <footer>
+      <p class="attribution">
+        Bootcamp 2023 by
+        <a href="https://www.mlab.co.za" target="_blank">CodeTribe</a>.
+        Developed by <a href="https://marco20s.github.io/Task3/">Makhosini Siyabonga Nzima </a>.
+      </p>
+    </footer>
+
+
+  </body>
+
+
+
+
+</html>
+
+<!-- Source Frontend Mentor: https://www.frontendmentor.io -->
+
+
